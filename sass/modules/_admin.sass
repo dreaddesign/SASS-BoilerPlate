@@ -1,0 +1,253 @@
+select
+  text-transform: uppercase
+
+#stream-inv-plugin
+  h1
+    line-height: normal
+    text-transform: uppercase
+
+  h3
+    font-size: 20px
+    line-height: normal
+    margin-bottom: 0
+    padding: 0
+    text-align: left
+    text-transform: none
+    background-color: transparent !important
+
+  h5
+    font-size: 12px
+    display: inline-block
+    margin: 0 15px 0 0
+
+  #message
+    display: none
+    max-width: 600px
+    padding: 10px
+    color: green
+    background-color: white
+
+  .ft-box
+    display: block
+    max-width: 800px
+
+  .cat-options
+    display: none
+
+  .cat-btn
+    display: inline-block
+    margin: 0 5px 10px 0
+    padding: 10px
+    cursor: pointer
+    background-color: white
+    box-shadow: 4px 4px 6px -4px rgba(0, 0, 0, 0.4)
+    -webkit-box-shadow: 4px 4px 6px -4px rgba(0, 0, 0, 0.4)
+
+    &.selected
+      color: white
+      background-color: #ff6b00
+
+  tr
+    td[data-colname=sort]
+      button
+        font-size: 18px
+        line-height: 12px
+        max-height: 20px
+
+      *
+        display: none !important
+
+    &:hover td[data-colname=sort] *
+      display: inline-block !important
+
+  th
+    font-weight: bold !important
+    padding: 8px 10px !important
+    text-transform: uppercase
+
+  tr:hover
+    background-color: #f3cfb5 !important
+
+    th
+      background-color: #fff !important
+
+  .btn-actions
+    clear: both
+    padding: 10px 0
+    text-align: right
+
+  th
+    &.sortable a, &.sorted a
+      padding: 0 !important
+      color: #32373c
+
+  .carName
+    margin: 0 0 15px
+    padding: 0 0 15px
+    border-bottom: 2px dotted #ccc
+
+  .showMe
+    float: left
+    box-sizing: border-box
+    width: 30%
+    padding: 10px
+    border: 1px solid #fff
+    border-radius: 4px
+    background-color: #fff
+
+    &.on
+      color: #f00
+      border: 1px solid #df8f90
+      background-color: #ffd2d3
+
+    input
+      margin-top: 0
+
+    label
+      line-height: 30px
+
+    input, label
+      display: inline-block
+      vertical-align: middle
+
+  #priceOverride
+    float: right
+    box-sizing: border-box
+    width: 65%
+    padding: 10px
+    border: 1px solid #fff
+    border-radius: 4px
+    background-color: #fff
+
+    #price-override
+      width: 111px
+      margin: 0 20px 0 0
+
+    label, input
+      display: inline-block
+      vertical-align: middle
+
+  .pricebox
+    margin: 0 10px 0 0
+
+  #priceOverride .datePick
+    &.fromDate
+      margin: 0 10px 0 0
+    input
+      width: 75px
+
+  .cat-options h4
+    font-size: 18px
+    margin: 0
+    padding: 8px 10px
+    text-transform: uppercase
+    border: 1px solid #e5e5e5
+    background-color: #fff
+
+  .ft-box
+    margin: 0 0 15px
+    .btn-actions
+      margin: 0 0 20px
+
+  .cat-filter-options td.column-enabled
+    width: 30px
+
+  .widefat 
+    .check-column
+      text-align: center
+      padding: 10px 0
+
+  .cat-detail-options
+    th
+      &.column-vlp, &.column-vdp
+        width: 90px
+        text-align: center
+    td
+      &.column-vlp, &.column-vdp
+        width: 30px
+
+  .ft-table
+    th:nth-child(1), td:nth-child(1)
+      width: 70px
+
+    select, input[type=text]
+      width: 100%
+
+/*-- CATALOGS STYLES -- */
+
+
+@media only screen and (max-width: 782px)
+  #stream-inv-plugin
+    padding: 0 10px 0 0
+    .ft-table
+      th:nth-child(1), td:nth-child(1), th:nth-child(3), td:nth-child(3)
+        width: auto
+
+  .wp-list-table tr th.check-column
+    width: 70px !important
+
+  #stream-inv-plugin
+    td.column-primary
+      display: block !important
+      box-sizing: border-box
+      width: 100% !important
+
+    .showMe, #priceOverride
+      float: none
+      width: 100%
+      margin: 0 0 15px
+
+    .pricebox
+      display: block
+      margin: 0 0 15px
+
+    .cat-btn
+      padding: 10px 5px
+
+    .cat-filter-options td
+      &.column-enabled
+        display: inline-table !important
+        width: 40px !important
+
+      &.column-label
+        display: inline-table !important
+        width: auto !important
+
+      &.column-sort
+        display: inline-table !important
+        width: 100px !important
+
+    .wp-list-table
+      &.cat-filter-options tr:not(.inline-edit-row):not(.no-items) td:not(.column-primary)::before
+        display: none
+
+      &.cat-detail-options tr:not(.inline-edit-row):not(.no-items) td
+        &:not(.column-primary)::before
+          display: none
+
+        &:not(.check-column)
+          display: table-cell !important
+
+  .wp-core-ui #stream-inv-plugin .button
+    padding: 4px 10px
+
+    &.button-large, &.button-small
+      padding: 4px 10px
+
+  #stream-inv-plugin
+    a.preview
+      padding: 4px 10px
+      
+    input
+      &#publish, &#save-post
+        padding: 4px 10px
+        
+  .filter-manager 
+    th 
+      input 
+        margin: 0
+
+.report-wrapper
+  @extend %col-xs-8
+.chart-wrapper
+  @extend %col-xs-4

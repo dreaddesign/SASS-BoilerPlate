@@ -1,0 +1,48 @@
+#ft-listings-wrapper 
+    .card 
+        .price-column 
+            .price-block
+                &.lockedprice  
+                    .finalPrice-price, 
+                    .discount-price, 
+                    .incentives-price
+                        display: none 
+
+            .ft-lead-form-btn 
+                position: relative
+#VDP-view 
+    #priceInfo
+        .price-block
+            &.lockedprice 
+                .finalPrice-price, 
+                .discount-price, 
+                .incentives-price
+                    display: none
+                    
+    .ft-lead-form-btn
+        position: relative
+
+.locked-text, 
+.unlocker-text
+    font:
+        size: 14px
+
+.lock-svg
+    fill: white
+    position: absolute
+    left: 0
+    width: 32px
+    background-color: darken($brand-color-secondary, 20%)
+    height: 100%
+    top: 0
+    padding: 7px
+    display: none
+    border-top-left-radius: 4px
+    border-bottom-left-radius: 4px
+.lock-svg
+    &.lockedprice
+        display: inline-block
+        
+#popup-form
+    #lock
+        display: none !important

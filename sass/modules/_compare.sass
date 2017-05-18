@@ -1,0 +1,325 @@
+*
+  box-sizing: border-box
+  
+.close-x
+  -webkit-animation-duration: 0.2s
+  animation-duration: 0.2s
+  -webkit-animation-fill-mode: both
+  animation-fill-mode: both
+  stroke: black
+  fill: transparent
+  stroke-linecap: round
+  stroke-width: 4
+  transition: 0.2s
+  -webkit-animation-name: rotateOutin
+  animation-name: rotateOutin
+  
+  &:hover
+    transition: 0.2s
+    -webkit-animation-duration: 0.2s
+    animation-duration: 0.2s
+    -webkit-animation-fill-mode: both
+    animation-fill-mode: both
+    -webkit-animation-name: rotateOutOff
+    animation-name: rotateOutOff
+
+  &-wrapper
+    margin: 0px 20px 20px 0px
+    background: #DDD
+    float: left
+    border-radius: 50%
+    height: 20px
+
+  &-path
+    width: 20px
+
+.animated
+  -webkit-animation-duration: 0.2s
+  animation-duration: 0.2s
+  -webkit-animation-fill-mode: both
+  animation-fill-mode: both
+
+.jumpUp
+  -webkit-animation-name: jumpUp
+  animation-name: jumpUp
+
+#svg-x-button
+  display: block
+  width: 20px
+  height: auto
+
+.compare
+  &-go
+    background-color: darken($brand-color-main, 5%)
+    color: white !important
+    cursor: pointer
+    right: 30px
+    position: fixed
+    font-size: 14px
+    font-weight: 400
+    padding: 7px 30px 7px 21px
+    text-decoration: none
+    top: 26%
+    -webkit-transform: rotate(-90deg)
+    -moz-transform:    rotate(-90deg)
+    -ms-transform:     rotate(-90deg)
+    -o-transform:      rotate(-90deg)
+    transform:         rotate(-90deg)
+    -ms-transform-origin: right bottom 0
+    -webkit-transform-origin: right bottom 0
+    transform-origin: right bottom 0
+    width: 235px
+    z-index: 51
+    transition: right 350ms 0ms, cubic-bezier(0.65, 0.01, 0.01, 1.27) !important
+
+    &:hover
+      color: white
+      cursor: pointer
+
+  &-go-copy
+    width: auto
+    display: inline-block
+    text-align: center
+    padding: 3.5px 0px
+
+    span
+      color: lighten($brand-color-main, 15%)
+      width: auto
+      display: inline
+
+  &-go-counter
+    background-color: white
+    border-radius: 50%
+    color: #0177c1
+    display: inline-block
+    height: auto
+    padding: 5px 10px
+    right: 14px
+    top: 6px
+    position: absolute
+    transition: 0.2s
+    -webkit-transform: rotate(90deg)
+    -moz-transform:    rotate(90deg)
+    -ms-transform:     rotate(90deg)
+    -o-transform:      rotate(90deg)
+    transform:         rotate(90deg)
+
+  &-go-limiter
+    position: absolute
+    max-width: 175px
+    background: rgba(0, 0, 0, 0.8)
+    padding: 7px 3.5px
+    color: white
+    font-size: 0.8rem
+    text-align: center
+    border-radius: 1px
+    top: -45px
+    left: 50%
+    -webkit-transform: translateX(-50%)
+    -moz-transform:    translateX(-50%)
+    -ms-transform:     translateX(-50%)
+    -o-transform:      translateX(-50%)
+    transform:         translateX(-50%)
+
+
+.ft-compare-cars.drawer
+  position: fixed
+  right: 0
+  height: 540px
+  padding: 10px
+  z-index: 999
+  background-color: darken($brand-color-main, 5%)
+  width: 320px
+  transition: right 350ms 0ms, cubic-bezier(0.65, 0.01, 0.01, 1.27) !important
+  top: 20%
+
+[class^="compare-single"]
+  color: white
+  padding: 10px
+  position: relative
+
+.drawer
+  &-title
+    font-weight: bold
+    font-size: 16px
+    color: white
+    text-decoration: none
+
+    &:hover, &:focus, &:active
+      color: $brand-color-main
+
+  &-vin
+    font-weight: 400
+    font-size: 12px
+
+.image.drawer-thumb
+  max-width: 130px
+  margin: auto
+
+  img
+    max-height: 85px
+    margin: auto
+
+a.ft-compare-btn-drawer
+  color: darken($brand-color-secondary, 50%) !important
+  display: block
+  margin: auto
+  font:
+    weight: bold
+  position: absolute
+  text-decoration: none
+  text-align: center
+  background-color: $brand-color-secondary
+  bottom: 0
+  width: 100%
+  left: 0px
+  padding: 10px
+
+  &:hover, &:active, &:focus
+    background-color: $brand-color-main
+    color: white !important
+
+.ft-compare
+  &-btn
+    width: 95%
+    background-color: #D8D8D8
+    color: #8c8c8c
+    padding: 6px
+    font-weight: 600
+    position: relative
+
+    &-single
+      position: relative
+      display: inline-block
+      overflow: hidden
+      width: 15%
+      float: left
+
+span.ft-compare-btn
+  background: none
+
+  &:active, &:focus
+    background: none
+
+.compare-car-card
+  position: relative
+  width: 75%
+  float: none
+  display: inline-block
+  text-align: center
+
+.compare
+  table
+    width: 100%
+    padding: 
+      top: 25px
+  td
+    border-top: 1px solid #ccc
+    border-right: 1px solid #ccc
+    padding: 15px
+
+  tr td:first-child
+    font-weight: bold
+
+  tr:nth-child(even) 
+    background-color: #eaeaea
+
+  .image 
+    text-align: center
+
+    td 
+      background-color: #fff
+      padding-bottom: 5px
+
+    .vehicle-details-link
+      display: block
+      margin: auto
+      text-decoration: none
+      text-align: center
+      width: 200px
+      padding: 7px
+      background-color: $brand-color-main
+      color: white
+
+  td img
+    max-width: 320px
+    margin: auto
+    width: 100%
+    
+  .mobile-only
+    display: none
+  &--title
+    a
+      text:
+        decoration: none
+      color: #262626
+
+      &:hover, &:active, &:focus
+        color: #002d6a
+
+span[class^="checkbox_id"]
+  position: relative
+  float: right
+  width: 20px
+  height: 18px
+  margin-right: 10px
+  background-color: white
+  border: 1px solid #8c8c8c
+
+  &:hover
+    cursor: pointer
+  &.checked:after
+    position: absolute
+    top: -5px
+    left: 8px
+    display: block
+    width: 8px
+    height: 13px
+    content: ''
+    -webkit-transform: rotate(45deg)
+    -moz-transform:    rotate(45deg)
+    -ms-transform:     rotate(45deg)
+    -o-transform:      rotate(45deg)
+    transform:         rotate(45deg)
+    border: solid #000000
+    border-width: 0 5px 5px 0
+
+div.ft-compare-btn.enabled
+  /* #0177c1 */
+  background-color: lighten($brand-color-main, 20%)
+  color: white
+  font-weight: 600
+
+.ft-compare-label
+  cursor: pointer
+  padding: 0 10px
+
+.thumb-column
+  position: relative
+
+  input
+    vertical-align: middle
+
+.compare-go.disabled
+  background-color: lighten($brand-color-main, 20%)
+  cursor: initial
+
+.loaderSVG 
+  position: absolute
+  left: 50%
+  -webkit-transform: translateX(-50%)
+  -moz-transform:    translateX(-50%)
+  -ms-transform:     translateX(-50%)
+  -o-transform:      translateX(-50%)
+  transform:         translateX(-50%)
+
+
+#compare-loader
+  path,
+  rect
+    fill: #0177c1
+
+@media screen and (max-width: 600px)
+  .ft-compare-btn,
+  .compare-go 
+    display: none !important

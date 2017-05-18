@@ -1,0 +1,283 @@
+@media only screen and (min-width: 999px) 
+  #ft-inventory .filter-tabs.mobile 
+    display: none !important
+    
+
+@media only screen and (max-width: 1199px)
+  #catalogue-wrapper
+    box-sizing: border-box
+
+  #ft-listings-wrapper .card .price-column .call-now h4
+    font-size: 23px
+
+  #ft-inventory .ft-controls
+    display: inline-block
+    width: 100%
+    max-width: 935px
+
+@media only screen and (max-width: 999px)
+  #maincol
+    border-bottom: none !important
+
+  #ft-filters
+    max-width: none
+    height: auto
+    position: relative
+    float: left
+    width: 100%
+    margin: auto
+    border: 0 1px 0 1px solid #c9c9c9
+
+    h4
+      display: none
+
+  #ft-filters-wrapper
+    float: none
+    box-sizing: border-box
+    width: 100%
+    height: auto
+    margin: 0
+    padding: 0
+    border: none
+
+    #ft-filters
+      display: none
+
+    .filter-tabs
+      position: relative
+      display: block
+      float: left
+      box-sizing: border-box
+
+      div
+        box-sizing: border-box
+        padding: 4px
+        border-right: none
+
+      .filter
+        font-weight: 600
+        height: auto
+        min-height: 53px
+        color: #124196
+        border-right: 1px solid #c9c9c9
+        border-right: 1px solid #c9c9c9
+        background-color: #fec11c
+
+      &.mobile
+        box-sizing: border-box
+
+  #ft-listings-wrapper
+    float: left
+    width: 100%
+
+  #ft-inventory
+    .carcount
+      display: none !important
+
+      &.mobile
+        display: block !important
+        height: auto
+        padding: 10px
+        background-color: #b7dff6
+
+    .filter-tabs
+      div
+        float: left
+        box-sizing: border-box
+        width: 50%
+        padding: 15px
+        background-color: $brand-color-main
+
+      &.mobile
+        font-weight: 600
+        color: #124196
+        border-right: 1px solid #c9c9c9
+        background-color: #fec11c
+
+        div
+          height: auto
+          padding: 15px
+          background-color: transparent
+
+        .sort-controls
+          display: block
+
+      .filter
+        min-height: 53px
+        width: 40%
+
+    .sort-controls-wrapper
+      padding: 0
+
+    > .sort-controls
+      display: none
+
+  /* adjusts filter to be the same size as sortby */
+  .filter-tabs .sort-controls-wrapper
+    padding: 0 !important
+    width: 60% !important
+
+  #ft-inventory
+    ul.filter-breadcrumbs
+      display: inline-block
+      width: 90%
+      margin: 10px 0 0
+      padding: 10px
+
+    .stockvin-search
+      display: inline-block
+      float: right
+      width: 100%
+      margin: 0
+      padding: 8px 0
+      vertical-align: middle
+      background: #ebebeb
+      background: rgba(0, 0, 0, 0.1)
+
+      .stockvin-go
+        display: inline-block
+        float: left
+        width: 46px
+        padding-top: 7px
+        text-align: center
+        border: 1px solid #fec11c
+
+    input[type='text']
+      position: relative
+      display: block
+      display: inline-block
+      float: left
+      width: 86%
+      margin-left: 15px
+      padding: 9px 10px
+      border: solid 1px #c9c9c9
+      background-image: none
+      box-shadow: none
+
+    .page-controls
+      margin-left: 17px
+      padding: 10px 0 20px
+      text-align: center
+
+    select.sort-controls
+      display: none
+      width: 100%
+      background: url(images/inv-tri-down.png) no-repeat 95% 20px
+      background-size: 15px
+
+      &:after
+        display: none
+
+  #ft-filters-wrapper
+    ul#ft-filters li
+      line-height: normal
+      position: relative
+      float: none
+      padding: 0
+      padding: 0 10px
+      border-top: 1px solid grey
+      border-bottom: 1px solid #c9c9c9
+
+      ul.values
+        margin: 0 0
+        list-style-type: none
+
+        li
+          font-size: 15px
+          padding: 8px 0
+          color: #000
+          border-bottom: 0
+
+    .sort-controls
+      display: block !important
+
+  .sort
+    color: white
+    background-color: #0e64b3
+
+  .ft--mobile-show
+    display: block
+
+  .ft--mobile-hide
+    display: none
+
+@media only screen and (max-width: 767px)
+  #ft-listings-wrapper .card
+    max-width: 500px
+    margin: 20px auto
+    border: 5px solid #002d6a
+
+    .thumb-column
+      float: none
+      width: 100%
+      padding: 10px 0
+      text-align: center
+
+    .details-column
+      float: none
+      width: 100%
+
+    .price-column
+      float: none
+      width: 100%
+
+      .call-now
+        padding: 34px !important
+        text-align: center
+        background-position: left 9% center
+
+  #ft-filters-wrapper ul#ft-filters li ul.values li.value.open .checkbox
+    position: absolute
+    top: 8px
+    left: 8px
+    width: 16px
+    height: 16px
+    border: 1px solid black
+
+    &.checked
+      position: absolute
+      top: 8px
+      left: 8px
+      width: 16px
+      height: 16px
+      border: 1px solid black
+
+      &:after
+        position: absolute
+        top: 3px
+        left: 6px
+        display: block
+        width: 3px
+        height: 6px
+        content: ''
+        transform: rotate(45deg)
+        border: solid $brand-color-main
+        border-width: 0 2px 2px 0
+
+  #ft-inventory input[type='text']
+    width: 82%
+    margin-left: 10px
+
+@media only screen and (max-width: 600px)
+  #ft-inventory input[type='text']
+    width: 75%
+    margin-left: 10px
+
+  .compare-go
+    display: none
+
+@media only screen and (max-width: 485px)
+  #ft-inventory input[type='text']
+    width: 66%
+    
+  select.sort-controls
+    background: transparent
+
+@media only screen and (max-width: 375px)
+  #ft-inventory select.sort-controls
+    background: none !important
+
+/* Work Around for only IE 9 and 10
+@media screen and (min-width: 0\0)
+  select.sort-controls
+    background: transparent

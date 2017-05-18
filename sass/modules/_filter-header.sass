@@ -1,0 +1,331 @@
+#ft-filters
+  overflow-y: auto
+  width: 100%
+  max-width: 220px
+  margin: auto 0
+  list-style-type: none
+
+  *
+    cursor: pointer
+
+  h4
+    margin: 0 0 10px
+    @if $theme == parallax
+      color: white
+    @else
+      color: $brand-color-main
+    
+
+.filter-loader
+  display: none
+  width: 100%
+
+#ft-filters
+  .filter-loader
+    width: 100%
+    margin: 0 auto
+    z-index: 800
+
+  .filter-loader-text
+    font-weight: bold
+    color: grey
+    width: 100%
+    text-align: center
+    margin-top: 30px
+
+  .filter-loader img
+    width: 50%
+    margin: 0 auto
+
+.filter-breadcrumbs li .filter-loader
+  z-index: 900
+  width: 100%
+  margin: 0 auto
+  background-color: transparent
+  position: absolute
+
+  img
+    width: 80%
+    margin: 0 auto
+    margin-top: 7px
+
+.sort-controls-wrapper .filter-loader
+  display: none
+  position: absolute
+  z-index: 900
+  background: transparent
+
+  img
+    width: 50%
+    margin: 0 auto
+    padding: 2px
+
+.spinner
+  display: none
+
+.stockvin-go .spinner
+  height: 22px
+  margin: 0 auto
+
+.page-controls .spinner
+  height: 16px
+  margin-top: 2px
+  float: left
+
+#ft-inventory .filter-tabs
+  display: none
+  width: 100%
+  border: 1px solid lightgrey
+  background-color: white
+  
+#ft-inventory
+  #filter-url
+    width: 100%
+    margin: 18px 0
+    padding: 5px 3%
+    opacity: .7
+    border: dashed 1px grey
+    background: lightgrey
+
+  #shortcode-atts
+    display: none
+
+  .filter-tabs
+    .filter, .sort-controls-wrapper
+      display: inline-block
+      //width: 48%;
+      height: auto
+      text-align: center
+      border-right: 1px solid lightgrey
+
+    &.mobile
+      position: fixed
+      z-index: 900
+      top: 0
+      left: 0
+      display: none
+
+  .carcount.mobile
+    background-color: white
+    border: 1px solid lightgrey
+    bottom: 0
+    box-sizing: border-box
+    display: none
+    height: 30px
+    left: 0
+    position: fixed
+    text-align: center
+    width: 100%
+    z-index: 900
+
+#ft-filters-wrapper .sort-controls
+  display: none
+
+#ft-inventory
+  position: relative
+  display: block
+  overflow: hidden
+  
+  .stockvin-search
+    display: inline-block
+    float: right
+    float: right
+    width: 270px
+    height: 53px
+    padding: 8px 10px
+    vertical-align: middle
+    background: #ebebeb
+    background: rgba(0, 0, 0, 0.1)
+
+    .stockvin-go
+      background-color: $brand-color-secondary
+      display: inline-block
+      float: right
+      width: 50px
+      height: 38px
+      padding-top: 7px
+      cursor: pointer
+      text-align: center
+      border: 1px solid $brand-color-secondary
+
+      &:hover, &:focus, &:active
+        cursor: pointer
+        color: $brand-color-main
+        background-color: white
+
+  input[type='text']
+    font-size: 16px
+    display: inline-block
+    width: 78%
+    padding: 9px 8px
+    border: solid 1px #c9c9c9
+    background-image: none
+    box-shadow: none
+    -webkit-appearance: none
+    -moz-appearance: none
+    appearance: none
+
+    &:focus, &:active
+      background-color: #fff
+
+  ul.filter-breadcrumbs
+    margin: auto
+    list-style-type: none
+    list-style-type: none
+
+    li
+      font-size: 14px
+      font-style: italic
+      line-height: normal
+      display: inline-block
+      margin: 0 10px 10px 0
+      padding: 0
+      color: white
+      white-space: nowrap
+      overflow: hidden
+
+      .value
+        display: inline-block
+        padding: 3px 18px 3px 18px
+        vertical-align: middle
+        text-transform: capitalize
+        background-color: #0177c1
+
+      .remove
+        font-weight: bold
+        font-style: normal
+        line-height: 24px
+        display: inline-block
+        width: 24px
+        height: 23px
+        cursor: pointer
+        text-align: center
+        vertical-align: middle
+        color: #fff
+        background-color: #0177c1
+        margin-left: -2px
+        -webkit-appearance: none
+        -moz-appearance: none
+        -ms-appearance: none
+        appearance: none
+
+        &.reset
+          width: 65px
+          padding: 0 9px
+          text-transform: uppercase
+          color: #143069
+          background-color: $brand-color-secondary
+
+        &:hover
+          color: #fff
+          background-color: #08a1e6
+
+  .ft-controls
+    display: inline-block
+    width: 100%
+    max-width: 100%
+    margin-bottom: 10px
+
+  .page-controls
+    display: inline-block
+    padding: 10px 0 20px
+    text-align: right
+
+    .carcount
+      font-size: 16px
+      font-weight: bold
+      display: inline-block
+      margin: 0 45px 0 0
+      vertical-align: middle
+
+    .vehPagination
+      position: relative
+      float: right
+
+    .page-prev
+      font-size: 3rem
+      position: absolute
+      position: absolute
+      top: -21px
+      left: -17px
+      cursor: pointer
+      cursor: pointer
+      color: #08a1e5
+
+      &:hover
+        color: #002d6a
+
+    .page-num
+      display: inline-block
+      vertical-align: middle
+      min-width: 16px
+
+    .sep
+      display: inline-block
+      margin: 0 5px
+      vertical-align: middle
+
+    .page-count
+      display: inline-block
+      vertical-align: middle
+
+    .page-next
+      font-size: 3rem
+      position: absolute
+      position: absolute
+      top: -21px
+      right: -20px
+      cursor: pointer
+      color: #08a1e5
+
+      &:hover
+        color: #002d6a
+
+    .hide
+      display: none
+
+  .sort-controls h4
+    display: inline-block
+    margin: 0
+    vertical-align: middle
+    color: #0a92d9
+
+  .sort-controls-wrapper
+    position: relative
+    display: inline-block
+    float: right
+    height: 53px
+    padding: 8px 10px
+    background: lightgrey
+
+.sort-controls select
+  height: 35px
+  padding: 5px 15px
+  border: solid 1px #c9c9c9
+  border-bottom: none
+  border-radius: 0
+  background-image: none
+  box-shadow: none
+  -webkit-appearance: none
+  -moz-appearance: none
+  appearance: none
+  -webkit-appearance: none
+  -moz-appearance: none
+  -ms-appearance: none
+  appearance: none
+
+select.sort-controls
+  font-size: 14px
+  display: block
+  padding: 9px 40px 9px 10px
+  color: white
+  background-color: $brand-color-main
+  border: solid 1px #c9c9c9
+  box-shadow: none
+  -webkit-appearance: none
+  -moz-appearance: none
+  appearance: none
+  background: url(images/inv-tri-down.png) no-repeat 160px 11px
+  background-repeat: no-repeat
+  background-size: 16px auto
+  cursor: pointer

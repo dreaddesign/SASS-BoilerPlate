@@ -1,0 +1,150 @@
+#ft-filters-wrapper
+  position: relative
+  float: left
+  box-sizing: border-box
+  width: 20%
+  height: 100vh
+  margin: 0 2% 20px 0
+  padding: 0 3px 3px
+  background-color: white
+
+  ul#ft-filters
+    list-style-type: none
+
+    li
+      line-height: normal
+      position: relative
+      float: none
+      padding: 0
+      border: 1px #eee solid
+
+      &.filter h2
+        &:after
+          position: absolute
+          top: 20px
+          right: 5px
+          display: block
+          width: 15px
+          height: 15px
+          content: ''
+          background-image: url(images/inv-tri.png)
+          background-size: cover
+
+        &.open:after
+          position: absolute
+          top: 20px
+          right: 5px
+          display: block
+          width: 15px
+          height: 15px
+          content: ''
+          -webkit-transform: rotateZ(90deg)
+          -moz-transform: rotateZ(90deg)
+          -ms-transform: rotateZ(90deg)
+          -o-transform: rotateZ(90deg)
+          transform: rotateZ(90deg)
+          background-image: url(images/inv-tri.png)
+          background-size: cover
+
+      h2
+        font-size: 16px
+        margin: 0
+        padding: 15px 5px
+        text-transform: uppercase
+        color: #262626
+
+        span.selected-count
+          font-size: 14px
+
+        &:hover
+          color: #08a1e5
+
+      ul.values
+        margin: 0
+        list-style-type: none
+
+        .selected
+          font-weight: 600
+
+        li
+          font-size: 15px
+          padding: 5px
+          color: #000
+          border-bottom: 0
+
+          &:after
+            display: none
+
+          &:hover
+            border-radius: 3px
+            background-color: $brand-color-secondary
+
+          &.value
+            display: none
+            border: none
+
+            &.open
+              display: block
+              padding-left: 30px
+              word-break: break-all
+
+              .checkbox
+                position: absolute
+                top: 6px
+                left: 8px
+                width: 16px
+                height: 16px
+                border: 1px solid black
+                
+                &.checked
+                  position: absolute
+                  top: 6px
+                  left: 8px
+                  width: 16px
+                  height: 16px
+                  border: 1px solid black
+
+                  &:after
+                    position: absolute
+                    top: 3px
+                    left: 6px
+                    display: block
+                    width: 3px
+                    height: 6px
+                    content: ''
+                    transform: rotate(45deg)
+                    border: solid $brand-color-main
+                    border-width: 0 2px 2px 0
+
+            &.selected.open
+              display: block
+              word-break: break-all
+              
+      .userprice 
+        float: left
+        display: inline-block
+        width: 46%
+
+        &.bot
+          margin-right: 14px
+
+        &-button-wrap
+          /* overriding filter padding */
+          padding: 5px 10px !important
+          text-align: center
+          background-color: $brand-color-main
+          color: white !important
+          &:hover
+            background-color: darken($brand-color-main, 15%) !important
+
+        /* userprice-wrap is the parent to userprice */
+        &-wrap
+          overflow: hidden
+          display: none
+          &:hover
+            background-color: initial !important
+          
+          &.open
+            display: block
+          /* !important needed to override initial filters padding */
+          padding: 10px !important

@@ -1,0 +1,266 @@
+.thumb-column
+  position: relative
+  input
+    vertical-align: middle
+
+.ft-error, .ft--mobile-show
+  display: none
+
+.ft--mobile-hide
+  display: block
+
+.ft-controls .sort-controls-wrapper
+  display: inline-block
+  float: right
+
+.filter-tabs select
+  font-size: 16px
+  font-weight: 600
+  float: left
+  box-sizing: border-box
+  width: 50%
+  height: auto
+  min-height: 53px
+  padding: 13.5px 5px
+  color: #fff
+  border-right: 1px solid #c9c9c9
+  border-bottom: none
+  border-radius: 0
+  background-color: #105aaa
+  -webkit-appearance: none
+  -moz-appearance: none
+  appearance: none
+  -webkit-appearance: none
+  -moz-appearance: none
+  -ms-appearance: none
+  appearance: none
+
+#filter-string
+  display: none
+
+#catalogue-wrapper
+  position: relative
+  display: block
+  overflow: hidden
+  
+  .get-filter-url
+    font-size: 14px
+    font-weight: 900
+    font-style: italic
+    display: block
+    box-sizing: border-box
+    width: 100%
+    padding: 5px 3%
+    cursor: pointer
+    text-align: center
+    text-transform: uppercase
+    color: #002d6a
+    border-radius: 8px
+    background-color: $brand-color-secondary
+
+.edit-details-btn
+  font-size: 16px
+  font-weight: 900
+  font-style: normal
+  display: inline-block
+  box-sizing: border-box
+  width: 100%
+  max-width: 200px
+  margin-bottom: 10px
+  padding: 10px 0
+  cursor: pointer
+  text-align: center
+  text-transform: uppercase
+  color: $brand-color-secondary
+  background-color: $brand-color-main
+
+  a
+    text-decoration: none
+
+#ft-listings-wrapper
+  float: left
+  width: 78%
+
+  .card
+    max-width: 1200px
+    margin: 0 0 15px
+    padding: 0
+    border: 0
+    background-color: #ebebeb
+    -webkit-box-shadow: none
+    box-shadow: none
+
+    .thumb-column
+      float: left
+      width: 25%
+      img
+        max-width: 100%
+
+    .details-column
+      float: left
+      box-sizing: border-box
+      width: 45%
+      padding: 10px
+      position: relative
+
+      .title
+        font-size: 25px
+        font-weight: 900
+        color: #262626
+
+        a
+          text-decoration: none
+          color: #262626
+
+          &:hover
+            color: #08a1e5
+
+      .subtitle
+        font-size: 16px
+        font-weight: bold
+        padding: 0 0 10px
+        color: #000
+
+      .details
+        padding: 15px 0
+        border-top: 1px solid #fff
+
+        ul.detail-list
+          margin: 0
+          list-style-type: none
+
+          li
+            font-size: 16px
+            line-height: 19px
+            padding: 0
+            color: #000
+
+            .label
+              font-weight: bold
+              text-transform: capitalize
+
+    .price-column
+      float: left
+      width: 30%
+      background-color: #cff7cf
+
+      .price-block
+        .price-calc
+          padding: 10px 0 0
+
+        .startPrice, .discount, .incentives
+          font-size: 20px
+          padding: 2px 15px
+          text-align: right
+          color: #000
+
+        .discount, .incentives
+          color: #c10000
+
+        .startPrice strong, .discount strong, .incentives strong
+          font-size: 18px
+          font-weight: bold
+          line-height: 26px
+          display: inline-block
+          float: left
+          color: #000
+
+        .finalPrice
+          font-size: 40px
+          font-weight: 900
+          margin: 0
+          padding: 20px 5px
+          text-align: center
+          color: #002d6a
+
+          strong
+            font-size: 24px
+            display: block
+            padding: 0
+
+        .call
+          font-size: 40px
+          font-weight: 900
+          margin: 0
+          padding: 20px 5px
+          text-align: center
+          color: #06a106
+
+        .onePrice
+          font-size: 40px
+          font-weight: 900
+          line-height: 49px
+          margin: 0
+          padding: 20px 5px
+          text-align: center
+          color: #002d6a
+
+          p
+            font-size: 20px
+            margin: 0
+            padding: 0
+            color: #262626
+
+      .call-now
+        box-sizing: border-box
+        width: 100%
+        padding: 10px 10px 10px 50px !important
+        text-align: center
+        background-color: #ededed
+        background-image: url(images/icon-phone.png)
+        background-repeat: no-repeat
+        background-position: center left 5%
+
+        h4
+          font-size: 28px
+          font-weight: 900
+          line-height: 30px
+          margin: 0
+          color: #ffc019
+
+          a
+            cursor: inherit
+            text-decoration: none
+            color: #000
+
+            &:hover
+              color: #02426f !important
+        p
+          font-size: 18px
+          line-height: normal
+          margin: 0
+          padding: 0
+          text-align: center
+          color: #000
+
+      .ft-lead-form-btn
+        font-size: 18px
+        font-weight: 900
+        display: block
+        box-sizing: border-box
+        width: 100%
+        padding: 10px 3%
+        cursor: pointer
+        text-align: center
+        color: #002d6a
+        background-color: #fec11c
+
+        &:hover
+          color: #ffd806
+          background-color: #002d6a
+          background-color: #08a1e6
+          color: #fff
+
+    .details
+      margin: 0
+      list-style-type: none
+
+      li
+        span:first-child
+          font-weight: 600
+          padding: 0 0 5px
+          text-transform: uppercase
+          color: #000
+
+        .value
+          font-weight: 400
